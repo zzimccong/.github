@@ -1,11 +1,6 @@
-![logo2](https://github.com/user-attachments/assets/7b55e059-a048-4f46-b0a5-c05be308f1d0)
+![image](https://github.com/user-attachments/assets/b087b565-9df9-49ab-b8a1-3afde271f159)
 
 
-# 📖 기업 예약 특화 맛집 예약 웹 앱 서비스 README
-
-- 배포 URL : 
-- Test ID : 
-- Test PW : 
 
 <br>
 
@@ -24,7 +19,7 @@
 
 | **신동구** | **도권재** | **정지영** | **한지혜** |
 | :------: |  :------: | :------: | :------: |
-| |
+ FE & BE |   FE & BE |  FE & BE | FE & BE
 
 </div>
 
@@ -32,11 +27,11 @@
 
 ## 1. 개발 환경
 
-- Front : HTML, React, styled-components, Recoil
-- Back-end : 제공된 API 활용
+- Front : React, Pwa, js, Axios
+- Back-end : Spring Boot, Spring Security, JWT, MySql
 - 버전 및 이슈관리 : Github, Github Issues, Github Project
-- 협업 툴 : Discord, Notion, Github Wiki
-- 서비스 배포 환경 : Netlify
+- 협업 툴 : Discord, Notion
+- 서비스 배포 환경 : AWS
 - 디자인 : ()
 - [커밋 컨벤션](https://github.com/likelion-project-README/README/wiki/%EC%BB%A4%EB%B0%8B-%EC%BB%A8%EB%B2%A4%EC%85%98)
 - [코드 컨벤션](https://github.com/likelion-project-README/README/wiki/%EC%BD%94%EB%93%9C-%EC%BB%A8%EB%B2%A4%EC%85%98)
@@ -94,13 +89,18 @@
 
 - **기능**
 
+
 <br>
     
 ### 👻도권재
 
 - **UI**
+  
 
 - **기능**
+- 음식점 정보 크롤링
+- 날짜 인원 별 예약 기능
+- 
 
 <br>
 
@@ -126,7 +126,7 @@
 
 ### 개발 기간
 
-- 전체 개발 기간 : 2024-07-00 ~ 2024-08-28
+- 전체 개발 기간 : 2024-07-10 ~ 2024-08-28
 - UI 구현 : 2024-07-00 ~ 2024-08-00
 - 기능 구현 : 2024-07-00 ~ 2024-08-00
 

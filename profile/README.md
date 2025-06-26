@@ -1,263 +1,108 @@
+# 🗓️ Zzimccong Plan - 찜꽁플랜
 ![image](https://github.com/user-attachments/assets/b087b565-9df9-49ab-b8a1-3afde271f159)
+> 음식점 예약, 추첨 이벤트, 회식 문서화까지 모두 가능한 올인원 예약 서비스
+
+---
+
+## 🔎 프로젝트 개요
+
+| 항목       | 내용                                   |
+|------------|----------------------------------------|
+| 프로젝트명 | Zzimccong Plan - 찜꽁플랜                |
+| 개발 기간  | 2024.07.10 ~ 2024.08.29                 |
+| 주요 목적  | 회식 예약 자동화, 노쇼 방지, 문서화 기능 제공 |
+| 기여도     | 4인 팀 프로젝트 (프론트엔드 + 백엔드 공동 개발) |
+
+> 직장인의 회식 장소 예약 스트레스를 줄이고, 점주의 노쇼 피해를 방지하며, 기업의 시간과 비용을 절감하기 위한 **B2B 예약 플랫폼**입니다.
+
+---
+
+## 🛠 기술 스택
+
+### 🖥 Frontend
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white)
+![React Router](https://img.shields.io/badge/ReactRouter-CA4245?style=flat-square&logo=reactrouter&logoColor=white)
+![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093?style=flat-square&logo=styled-components&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=axios&logoColor=white)
+![jsPDF](https://img.shields.io/badge/jsPDF-F6C915?style=flat-square&logo=javascript&logoColor=black)
+![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=swiper&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)
+![React Calendar](https://img.shields.io/badge/ReactCalendar-00C49F?style=flat-square)
+![React Modal](https://img.shields.io/badge/ReactModal-333333?style=flat-square)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+
+### ⚙ Backend
+![Spring Boot](https://img.shields.io/badge/SpringBoot-6DB33F?logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Security-6DB33F?logo=springsecurity&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens&logoColor=white)
+![JPA](https://img.shields.io/badge/JPA-007396?logo=hibernate&logoColor=white)
+![QueryDSL](https://img.shields.io/badge/QueryDSL-4B8BBE?logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white)
+
+### ☁ Infra & DevOps
+![AWS EC2](https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white)
+
+### 🤝 협업 도구
+![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-000000?logo=notion&logoColor=white)
+![Draw.io](https://img.shields.io/badge/Draw.io-F08705?logoColor=white)
+![ERDCloud](https://img.shields.io/badge/ERDCloud-0092FF?style=flat-square)
+![Discord](https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white)
+![Google Drive](https://img.shields.io/badge/Google_Drive-4285F4?style=flat-square&logo=googledrive&logoColor=white)
+
+---
+
+## 🧩 핵심 기능
+
+### 🙋‍♂️ 고객 (User)
+- 회원가입 / 로그인 / 아이디찾기 / 비밀번호 초기화
+- 음식점 검색, 예약, 리뷰 작성
+- 예약권 및 추첨권 결제
+- 추첨 이벤트 참여 / 쿠폰 수령
+
+### 🏢 기업 (Corporation)
+- 음식점 장바구니 담기
+- PDF 문서화 (회식 계획서 자동 출력)
+- 예약 통계 확인
+
+### 🧑‍🍳 점주 (Owner)
+- 음식점 등록 및 정보 수정
+- 예약 상태 변경 (확정 / 거절)
+- 리뷰 답글 작성
+
+### 🔐 관리자 (Admin)
+- 유저, 점주, 기업 정보 관리 (CRUD)
+- 음식점 승인, 이벤트 종료 관리
+
+
+## 🗂️ 프로젝트 구조
+
+### 📁 Backend
+```
+com.zzimccong
+├── config           # Security 설정
+├── controller       # REST API 컨트롤러
+├── service          # 비즈니스 로직 처리
+├── repository       # JPA Repository
+├── domain           # Entity 클래스들
+├── dto              # 요청/응답 DTO
+├── security         # JWT, 필터 구성
+```
+
+### 📁 Frontend
+```
+src
+├── api              # Axios 모듈
+├── components       # 공통 컴포넌트
+├── pages            # 기능별 페이지
+├── store            # 상태 관리
+├── utils            # 토큰, 유틸 함수
+```
 
 
 
-<br>
-
-## 프로젝트 소개
-
-- 
-- 
-- 
-- 
-
-<br>
-
-## 팀원 구성
-
-<div align="center">
-
-| **신동구** | **도권재** | **정지영** | **한지혜** |
-| :------: |  :------: | :------: | :------: |
- FE & BE |   FE & BE |  FE & BE | FE & BE
-
-</div>
-
-<br>
-
-## 1. 개발 환경
-
-- Front : React, Pwa, js, Axios
-- Back-end : Spring Boot, Spring Security, JWT, MySql
-- 버전 및 이슈관리 : Github, Github Issues, Github Project
-- 협업 툴 : Discord, Notion
-- 서비스 배포 환경 : AWS
-- 디자인 : ()
-- [커밋 컨벤션](https://github.com/likelion-project-README/README/wiki/%EC%BB%A4%EB%B0%8B-%EC%BB%A8%EB%B2%A4%EC%85%98)
-- [코드 컨벤션](https://github.com/likelion-project-README/README/wiki/%EC%BD%94%EB%93%9C-%EC%BB%A8%EB%B2%A4%EC%85%98)
-- [스프라이트](https://github.com/likelion-project-README/README/wiki/%EC%8A%A4%ED%94%84%EB%9D%BC%EC%9D%B4%ED%8A%B8)
-<br>
-
-## 2. 채택한 개발 기술과 브랜치 전략
-
-### React, styled-component
-
-- React
-    - 컴포넌트화를 통해 추후 유지보수와 재사용성을 고려했습니다.
-    - 유저 배너, 상단과 하단 배너 등 중복되어 사용되는 부분이 많아 컴포넌트화를 통해 리소스 절약이 가능했습니다.
-- styled-component
-    - props를 이용한 조건부 스타일링을 활용하여 상황에 알맞은 스타일을 적용시킬 수 있었습니다.
-    - 빌드될 때 고유한 클래스 이름이 부여되어 네이밍 컨벤션을 정하는 비용을 절약할 수 있었습니다.
-    - S dot naming을 통해 일반 컴포넌트와 스타일드 컴포넌트를 쉽게 구별하도록 했습니다.
-    
-### Recoil
-
-- 최상위 컴포넌트를 만들어 props로 유저 정보를 내려주는 방식의 경우 불필요한 props 전달이 발생합니다. 따라서, 필요한 컴포넌트 내부에서만 상태 값을 가져다 사용하기 위해 상태 관리 라이브러리를 사용하기로 했습니다.
-- Redux가 아닌 Recoil을 채택한 이유
-    - Recoil은 React만을 위한 라이브러리로, 사용법도 기존의 useState 훅을 사용하는 방식과 유사해 학습비용을 낮출 수 있었습니다.
-    - 또한 Redux보다 훨씬 적은 코드라인으로 작동 가능하다는 장점이 있었습니다.
-- 로그인과 최초 프로필 설정 시 유저 정보를 atom에 저장하여 필요한 컴포넌트에서 구독하는 방식으로 사용했습니다.
-
-### eslint, prettier
-
-- 정해진 규칙에 따라 자동적으로 코드 스타일을 정리해 코드의 일관성을 유지하고자 했습니다.
-- 코드 품질 관리는 eslint에, 코드 포맷팅은 prettier에 일임해 사용했습니다.
-- airbnb의 코딩 컨벤션을 참고해 사용했고, 예외 규칙은 팀원들과 협의했습니다.
-- 협업 시 매번 컨벤션을 신경 쓸 필요 없이 빠르게 개발하는 데에 목적을 두었습니다.
-
-### 브랜치 전략
-
-- Git-flow 전략을 기반으로 main, develop 브랜치와 feature 보조 브랜치를 운용했습니다.
-- main, develop, Feat 브랜치로 나누어 개발을 하였습니다.
-    - **main** 브랜치는 배포 단계에서만 사용하는 브랜치입니다.
-    - **develop** 브랜치는 개발 단계에서 git-flow의 master 역할을 하는 브랜치입니다.
-    - **Feat** 브랜치는 기능 단위로 독립적인 개발 환경을 위하여 사용하고 merge 후 각 브랜치를 삭제해주었습니다.
-
-<br>
-
-## 3. 프로젝트 구조
-
-
-
-<br>
-
-## 4. 역할 분담
-
-### 🍊신동구
-
-- **UI**
-
-- **기능**
-
-
-<br>
-    
-### 👻도권재
-
-- **UI**
-  
-
-- **기능**
-- 음식점 정보 크롤링
-- 날짜 인원 별 예약 기능
-- 
-
-<br>
-
-### 😎정지영
-
-- **UI**
-
-- **기능**
-
-
-<br>
-
-### 🐬한지혜
-
-- **UI**
-   
-- **기능**
-
-    
-<br>
-
-## 5. 개발 기간 및 작업 관리
-
-### 개발 기간
-
-- 전체 개발 기간 : 2024-07-10 ~ 2024-08-28
-- UI 구현 : 2024-07-00 ~ 2024-08-00
-- 기능 구현 : 2024-07-00 ~ 2024-08-00
-
-<br>
-
-### 작업 관리
-
-- GitHub Projects와 Issues를 사용하여 진행 상황을 공유했습니다.
-- 주간회의를 진행하며 작업 순서와 방향성에 대한 고민을 나누고 GitHub Wiki에 회의 내용을 기록했습니다.
-
-<br>
-
-## 6. 신경 쓴 부분
-
-- [접근제한 설정](https://github.com/likelion-project-README/README/wiki/README-6.%EC%8B%A0%EA%B2%BD-%EC%93%B4-%EB%B6%80%EB%B6%84_%EC%A0%91%EA%B7%BC%EC%A0%9C%ED%95%9C-%EC%84%A4%EC%A0%95)
-
-- [Recoil을 통한 상태관리 및 유지](https://github.com/likelion-project-README/README/wiki/README-6.%EC%8B%A0%EA%B2%BD-%EC%93%B4-%EB%B6%80%EB%B6%84_Recoil%EC%9D%84-%ED%86%B5%ED%95%9C-%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EC%9C%A0%EC%A7%80)
-
-<br>
-
-## 7. 페이지별 기능
-
-### [초기화면]
-
-| 초기화면 |
-|----------|
-
-<br>
-
-### [회원가입]
-
-| 회원가입 |
-|----------|
-
-<br>
-
-### [프로필 설정]
-
-| 프로필 설정 |
-|----------|
-
-<br>
-
-### [로그인]
-
-
-| 로그인 |
-|----------|
-
-<br>
-
-### [로그아웃]
-
-| 로그아웃 |
-|----------|
-
-<br>
-
-### [상하단 배너]
-
-
-| 상하단 배너 |
-
-<br>
-
-### [홈 피드]
-
-<br>
-
-### [검색]
-
-<br>
-
-### [프로필]
-
-#### 1. 내 프로필
-
-<br>
-
-#### 2. 타 유저의 프로필
-
-<br>
-
-#### 3. 프로필 수정
-
-<br>
-
-### [게시글]
-
-
-<br>
-
-### [상품]
-
-
-<br>
-
-## 8. 트러블 슈팅
-
-
-
-<br>
-
-## 9. 개선 목표
-
-
-    
-- **23-01-17 성능 개선 내용**
-    
- 
-    
-<br>
-
-## 10. 프로젝트 후기
-
-### 🍊 신동구
-
-
-<br>
-
-### 👻 도권재
-
-
-
-<br>
-
-### 😎 정지영
-
-
-
-<br>
-
-### 🐬 한지혜
 

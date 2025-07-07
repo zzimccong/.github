@@ -4,7 +4,7 @@
 
 ## 🔗 관련 문서 / 프로젝트 링크
 
-- 📘 [팀 노션 페이지]([https://www.notion.so/shins99/8052ca2b00194db7ac9ae93c8822c73b?v=850585d134d848249fce7fff139d84ca](https://equinox-gull-ade.notion.site/10fdc25e4b1680f0acd5f4bf86ab49f3?v=10fdc25e4b1681a2aa36000cae291731))
+- 📘 [팀 노션 페이지](https://equinox-gull-ade.notion.site/10fdc25e4b1680f0acd5f4bf86ab49f3?v=10fdc25e4b1681a2aa36000cae291731)
 - 📑 [API 명세서](https://www.notion.so/API-10fdc25e4b16814badabd4224eb974b0)
 - 🧭 [트러블 슈팅](https://www.notion.so/10fdc25e4b1681d4816dffdcd49f083d)
 - 🗺️ [ERD 설계 (ERDCloud)](https://www.erdcloud.com/d/XddgJ9nNpakHRkAdG)
